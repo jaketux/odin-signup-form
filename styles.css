@@ -1,0 +1,118 @@
+body{
+    display:flex;
+    padding:0;
+    margin:0;
+}
+
+
+
+:root{
+    --padding-left:5vh;
+    --padding-bottom:3vh;
+    --hero-font-size:48px;
+    --subheading-font-size:30px;
+    font-family: "Lato", sans-serif;
+
+}
+
+.panel-banner{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:15vh;
+    width:50vh;
+    background-color: black;
+    opacity:40%;
+    box-sizing: content-box;;
+    margin-top:75%;
+}
+
+.panel-text{
+    font-size:72px;
+    color:white;
+}
+
+.background-image{
+    position:absolute;
+    background:no-repeat;
+    background-size: cover;
+    width: 50vh;
+    height:100vh;
+    background-image:url(./inglis-trophy.png);
+    background-position: 70%;
+    filter: grayscale(1);
+
+}
+
+
+.hero-text{
+    margin-top:20vh;
+    padding-left:var(--padding-left);
+    padding-bottom:var(--padding-bottom);
+    font-size:var(--hero-font-size);
+    width:55vw;
+}
+
+
+
+.form-box, .login-text, .form-header{
+    padding-left:var(--padding-left);
+    padding-bottom:var(--padding-bottom)
+}
+
+.form-header, .login-text{
+    font-size:var(--subheading-font-size)
+}
+
+form{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    width:35vw;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    
+}
+
+input{
+    border-radius:5px;
+    padding:12.5px 10px 12.5px 10px;
+    margin-bottom:20px;
+    width:300px;
+}
+
+input[type="password"]{
+    margin-bottom:0px;
+}
+
+button{
+margin-left:var(--padding-left);
+margin-bottom:var(--padding-bottom);
+padding:15px 50px 15px 50px;
+border-radius:10px;
+box-shadow:0px 2px 4px rgb(177, 177, 177);
+border:2px solid rgb(177, 177, 177);
+font-size:16px
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 1px solid red; opacity: 80%;
+  }
+input:empty{
+    border:1px gray solid;
+    opacity: 80%;
+}
+input:valid{
+    border:1px green solid;
+    opacity: 80%;
+}
+
+input:focus{
+    outline:none;
+    border:2px solid lightgray;
+    box-shadow:0px 4px 8px rgb(177, 177, 177);
+}
